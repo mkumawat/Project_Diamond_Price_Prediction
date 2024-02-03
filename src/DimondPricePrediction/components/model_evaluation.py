@@ -27,6 +27,7 @@ class ModelEvaluation:
 
             mlflow.set_registry_uri("https://dagshub.com/mkumawat1307/Project_Diamond_Price_Prediction.mlflow")
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+            print(tracking_url_type_store)
 
             with mlflow.start_run():
                 predicted_qualities = model.predict(x_test)
