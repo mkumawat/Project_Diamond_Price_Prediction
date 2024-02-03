@@ -1,0 +1,48 @@
+1. you have to ready your code in your local 
+
+	https://github.com/mkumawat1307/Project_Diamond_Price_Prediction
+
+	1.1 you can clone this repo
+	1.2 create a env
+	1.3 install requirements.txt
+	1.4 then run app.py in your local env
+
+2. you need to create your own repo on github and push this code to your github
+	<after cloning my repo you will het .grt folder also in your repo it might be 	hidden folder so first delete that .git folder and init your .git with this command 	git init then follow the futher setup for pushing the code to your github repo>
+
+3. here if i am performing ci/cd so this workflow is very important so make sure you have .github/workflows/main.yaml
+
+4. and create the docker file since i am doing deployment in the form docker image below are docker code
+	FROM python:3.8-slim-buster
+	WORKDIR /service
+	COPY requirements.txt .
+	COPY . ./
+	RUN pip install -r requirements.txt
+	ENTRYPOINT ["python3", "app.py"]
+
+5. edit app.py file write this app.run(host="0.0.0.0", port=8080)
+
+6. you need to signup or login to your aws account
+	<you can signup with debit card as well>
+
+7. you need to config three things
+	7.1 you need to create i am user
+	    and here you need to give the adminacess
+	    you need to download keyid and secret access key
+	    
+		how to create a IAM user
+		<search IAM/ user/ create user/ attached policy/ Adiministrator access/ download the secret keys>
+
+	7.2 you need to create a ECR repo
+	7.3 you have to config your app runner
+
+8. you need to add your variable into your github repo 
+you need to add this variable as a secracte variable
+AWS_ACCESS_KEY_ID=""
+AWS_SECRET_ACCESS_KEY=""
+
+<you supposed to add this secret in your github repo here is the path for adding the variable
+
+settings/secret and variable/action/secret and then click on the new repo secret>
+
+In the workflow check that you have mentioned correct ECR repo name and you need to check the ECR region as well and mention the correct region,
