@@ -46,7 +46,7 @@ class ModelEvaluation:
                     # there are other ways to use the model registry, which depends on the yse case,
                     # please refer to the doc for more information
                     # https://mlflow.org/docs/latest/model-registry.html#ip-workflow
-                    mlflow.sklearn.load_model(model, "model", registered_model_name="ml_model")
+                    mlflow.sklearn.log_model(model, "model", registered_model_name="ml_model")
                 # it is for the local
                 else:
                     mlflow.sklearn.log_model(model,"model")
