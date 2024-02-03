@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/iNeuron/Python/14.%20Machine%20Learning/1.%20Linear%20%26%20Logistic%20Regression/Project_Diamond_Price_Prediction/mlruns/0/a1594fcab27e4f4fbf4c70d8ab285679/artifacts
+end_time: 1706967979150
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a1594fcab27e4f4fbf4c70d8ab285679
+run_name: blushing-finch-35
+run_uuid: a1594fcab27e4f4fbf4c70d8ab285679
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706967975967
+status: 3
+tags: []
+user_id: mkumawat
