@@ -25,6 +25,7 @@ class ModelEvaluation:
             model_path = os.path.join("artifacts","model.pkl")
             model=load_object(model_path)
 
+            mlflow.set_registry_uri("http://dagshub.com/sunny.savita/fsdsmendtoend.mlflow")
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
             with mlflow.start_run():
@@ -37,11 +38,18 @@ class ModelEvaluation:
 
                 # model registry does not work with file store
                 if tracking_url_type_store != "file":
-                    pass
+                    
 
                     # register the model
-                    # there are other ways to use the model 
+                    # there are other ways to use the model registry, which depends on the yse case,
+                    # please refer to the doc for more information
+                    # https://mlflow.org/docs/latest/model-registry.html#ip-workflow
+                    mlflow.sklearn.load_model(model, "model", registered_model_name="ml_model")
+
+                else:
+                    mlflow.sklearn.log_model(model,"model")
+                
 
 
         except Exception as e:
-            pass
+            raise e
