@@ -35,7 +35,8 @@ class ModelEvaluation:
                 mlflow.log_metric("rmse", rmse)
                 mlflow.log_metric("mae", mae)
                 mlflow.log_metric("r2", r2)
-
+                
+                # this condition is for dagshub
                 # model registry does not work with file store
                 if tracking_url_type_store != "file":
                     
@@ -45,7 +46,7 @@ class ModelEvaluation:
                     # please refer to the doc for more information
                     # https://mlflow.org/docs/latest/model-registry.html#ip-workflow
                     mlflow.sklearn.load_model(model, "model", registered_model_name="ml_model")
-
+                # it is for the local
                 else:
                     mlflow.sklearn.log_model(model,"model")
                 
