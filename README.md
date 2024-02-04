@@ -19,3 +19,11 @@ export MLFLOW_TRACKING_USERNAME=mkumawat1307
 
 export MLFLOW_TRACKING_PASSWORD=bd5796460654bdb5e4f18b3d83e8f04d4584ee7e
 ```
+
+
+DVC cmd
+```
+dvc init
+dvc repro
+dvc dag
+```

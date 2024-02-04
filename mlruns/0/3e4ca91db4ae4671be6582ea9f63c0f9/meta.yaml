@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/iNeuron/Python/14.%20Machine%20Learning/1.%20Linear%20%26%20Logistic%20Regression/Project_Diamond_Price_Prediction/mlruns/0/3e4ca91db4ae4671be6582ea9f63c0f9/artifacts
+end_time: 1707033390262
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3e4ca91db4ae4671be6582ea9f63c0f9
+run_name: chill-owl-193
+run_uuid: 3e4ca91db4ae4671be6582ea9f63c0f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707033385080
+status: 3
+tags: []
+user_id: mkumawat

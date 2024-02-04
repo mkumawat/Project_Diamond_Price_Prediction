@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/iNeuron/Python/14.%20Machine%20Learning/1.%20Linear%20%26%20Logistic%20Regression/Project_Diamond_Price_Prediction/mlruns/0/23daa129b6b94ad69ba443900e243508/artifacts
+end_time: 1707033443582
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 23daa129b6b94ad69ba443900e243508
+run_name: omniscient-shad-410
+run_uuid: 23daa129b6b94ad69ba443900e243508
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707033438569
+status: 3
+tags: []
+user_id: mkumawat
