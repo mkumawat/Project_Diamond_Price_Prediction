@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Python/iNeuron/Python/14.%20Machine%20Learning/1.%20Linear%20%26%20Logistic%20Regression/Project_Diamond_Price_Prediction/mlruns/0/bae9161e78ac4fae91d618a085dfc44e/artifacts
+end_time: 1707033070429
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bae9161e78ac4fae91d618a085dfc44e
+run_name: redolent-cod-445
+run_uuid: bae9161e78ac4fae91d618a085dfc44e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707033065808
+status: 3
+tags: []
+user_id: mkumawat
